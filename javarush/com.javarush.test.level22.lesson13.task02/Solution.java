@@ -32,6 +32,9 @@ public class Solution {
                         writer.write(utf8String);
                     }
                     writer.close();
+                    reader.close();
+                    inputStream.close();
+                    outputStream.close();
                 } catch (IOException ex) { ex.printStackTrace(); }
             }
         }
